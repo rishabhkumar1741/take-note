@@ -41,3 +41,54 @@ footer > p {
   font-weight: bold;
   color: black;
 }
+.note-area {
+  width: 30vw;
+  margin: 10px auto;
+}
+.note-area > form {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgb(104, 101, 101);
+  box-shadow: 2px 4px 10px rebeccapurple;
+  border-radius: 10px;
+}
+.note-area > form > input {
+  height: 60px;
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+  outline: none;
+  padding-left: 10px;
+}
+.note-area > form > textarea {
+  height: 60px;
+  max-width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.button-icon {
+  border-radius: 100%;
+  position: relative;
+  top: 5px;
+  left: 85%;
+  width: 48px;
+  color: yellowgreen;
+}
+.note {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 10px;
+  border: 2px solid greenyellow;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  min-height: 200px;
+  max-height: 300px;
+  overflow: auto;
+  box-shadow: 2px 2px 5px 5px rgb(251, 228, 96);
+}
