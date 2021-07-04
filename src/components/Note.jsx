@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
     marginLeft: "55%",
+    marginTop: "40%",
     fontSize: 15,
   },
 }));
