@@ -1,5 +1,5 @@
 # Getting Started with Take-Note Application
-![](src/images/project-image.png)
+![](/src/Images/project-image.png)
 
 ## Available Scripts
 
