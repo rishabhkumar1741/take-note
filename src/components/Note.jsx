@@ -1,14 +1,37 @@
 import React from "react";
-import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
+import { makeStyles } from "@material-ui/core/styles";
+import DeleteIcon from "@material-ui/icons/Delete";
+import Button from "@material-ui/core/Button";
+import "../index.css";
+const useStyles = makeStyles((theme) => ({
+  button: {
+    margin: theme.spacing(1),
+    marginLeft: "55%",
+    fontSize: 15,
+  },
+}));
 
-const Note = () => {
+const Note = (props) => {
+  const classes = useStyles();
+  const deletethis = (event) => {
+    props.deleteitem(props.id);
+  };
+
   return (
     <>
       <div className="note">
-        <h1>Title</h1>
+        <h1>{props.title}</h1>
         <br />
-        <p>rihsabakhb</p>
-        <DeleteOutlineIcon className="delete" />
+        <span>{props.note}</span>
+        <Button
+          onClick={deletethis}
+          variant="contained"
+          color="secondary"
+          className={classes.button}
+          startIcon={<DeleteIcon />}
+        >
+          Delete
+        </Button>
       </div>
     </>
   );
